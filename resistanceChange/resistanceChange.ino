@@ -10,7 +10,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   potentiometerVal = analogRead(potentiometerPin);
 
-  int mappedVal = map(potentiometerVal,0,1023,0,255)
+  int mappedVal = map(potentiometerVal,0,1023,0,255);
   Serial.print(" - ");
   Serial.println(mappedVal);
   analogWrite(led, mappedVal);
